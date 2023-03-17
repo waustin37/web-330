@@ -4,7 +4,22 @@
     Date: 03/17/2023
     Description: Styling for Global Web 330 Site
 */
-
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#icon-mode:hover{
+    cursor: pointer;
+}
+#icon-text {
+    padding-left: 10px;
+}
+.pull-right{
+    float:right;
+    margin-top: 40px;
+    margin-right: 100px;
+}
 .return-home{
     color: #4F3674;
     text-decoration: none;
