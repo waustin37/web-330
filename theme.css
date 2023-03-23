@@ -60,6 +60,19 @@ a:hover{
     background-color: var(--anchor-hover-background-color);
     color: var(--anchor-hover-color);
 }
+.return-home{
+    color: var(--anchor-color);
+    text-decoration: none;
+    width: 600px;
+    margin-left: 26%;
+}
+.return-home:hover{
+    background-color: var(--anchor-hover-background-color);
+    color: var(--anchor-color);
+}
+.return-home:visited {
+    color:var(--anchor-color);
+}
 h1{
     color: var(--heading-color);
     background-color: var(--h1-background-color);
