@@ -64,7 +64,8 @@ a:hover{
     color: var(--anchor-color);
     text-decoration: none;
     width: 600px;
-    margin-left: 26%;
+    margin-left: 29%;
+
 }
 .return-home:hover{
     background-color: var(--anchor-hover-background-color);
