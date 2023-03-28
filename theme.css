@@ -90,7 +90,6 @@ h2, h3, h4 {
     transition: 0.3s;
     width:600px;
     margin: auto;
-
     background-color: var(--card-background-color);
 }
 #card-title{
