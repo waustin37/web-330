@@ -26,7 +26,7 @@ export class Bill
 
     addDessert(dessert)
     {
-        this._dessert.push(dessert);
+        this._desserts.push(dessert);
     }
 
     getTotal()
