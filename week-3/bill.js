@@ -1,4 +1,10 @@
-
+/*
+    ==================
+    Title: bill.js, 
+    Author: William Austin
+    Date: 3/28/2023
+    Description: Creating a Bill Class Module using other js Modules
+*/
 export class Bill
 {
     constructor (_beverages, _appetizers, _mainCourses, _desserts)
