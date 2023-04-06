@@ -1,3 +1,12 @@
+/*
+    ==================
+    Title: calorie-converter.js, 
+    Author: William Austin
+    Date: 4/06/2023
+    Description: Creating an array of FoodModel objects
+                 and the function to match those objects with the user input
+*/
+
 import {FoodModel} from "./food-model.js";
 
 export class CalorieConverter{

@@ -44,7 +44,7 @@
 
                 <div class = "assign-container">
                     <div class = "assign-contents">
-                        <div id="card-2">
+                        <div id="card">
                             <p id="card-title">Search Results</p>
 
                                 <table id="resultsTable">
@@ -62,12 +62,23 @@
 <!--JavaScript-->
 
 <script type="module">
+
+    //First calling the Calorie Converter Function
+
     import {CalorieConverter} from "./calorie-converter.js";
+
+    //Getting the information the user types into the entry field
     let txtFoodItemEl = document.getElementById("txtFoodItem");
 
+
+    //Registering the button with a Click event
     document.getElementById("btnSearch").onclick = function(){
         let txtFoodItem = txtFoodItemEl.value;
+
+        //Finding the foods from the Object Array that match the text from the input 
         let foods = CalorieConverter.find(txtFoodItem);
+        
+        //Creating the Table with that information
         let tableData = "";
         for (let food of foods){
             let tableRow = `
@@ -81,7 +92,7 @@
             document.getElementById("searchResults").innerHTML = tableData;
     }
     
-    
+    //This should allow the user to hit the enter key as if they clicked the button
         document.addEventListener("keyup", function(event)
             {
                 if (event.key == "Enter")
@@ -90,6 +101,7 @@
                 }
             });
 
+    //This is populating our Food List with whatever objects are in the Calorie Converter
     let foodList = CalorieConverter.data;
 
     let foodListData = "<i>(Ex: ";
