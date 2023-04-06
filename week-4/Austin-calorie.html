@@ -65,10 +65,6 @@
     import {CalorieConverter} from "./calorie-converter.js";
     let txtFoodItemEl = document.getElementById("txtFoodItem");
 
-    let resultsTable = document.getElementById("card-2");
-    resultsTable.style.display="none";
-
-
     document.getElementById("btnSearch").onclick = function(){
         let txtFoodItem = txtFoodItemEl.value;
         let foods = CalorieConverter.find(txtFoodItem);
