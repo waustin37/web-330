@@ -34,7 +34,7 @@
                         <br>
                         <span id="foodList"></span>
                         <br>
-                        <button id="btnSearch", class="btn-primary full-width">Search</button>
+                        <button id="btnSearch" class="btn-primary full-width">Search</button>
                     </div>
                 </div>
 
@@ -46,22 +46,19 @@
                     <div class = "assign-contents">
                         <div id="card">
                             <p id="card-title">Search Results</p>
-
-                                <table id="resultsTable">
+                                <table>
                                     <tr>
                                         <th>Name</th>
                                         <th>Calories</th>
                                     </tr>
                                     <tbody id="searchResults">
-
-
                         </div>
                     </div>
                 </div>
+        </div>
+    <!--JavaScript-->
 
-<!--JavaScript-->
-
-<script type="module">
+    <script type="module">
 
     //First calling the Calorie Converter Function
 
@@ -88,7 +85,7 @@
             </tr>`
             tableData += tableRow;
         }
-            tableData += "</tbody></table>";
+            tableData += "</tbody></table> <br>";
             document.getElementById("searchResults").innerHTML = tableData;
     }
     
@@ -114,7 +111,7 @@
             foodListData = `${foodListData.slice(0,-2)})</i>`;
 
             document.getElementById("foodList").innerHTML = foodListData;
-</script>
+    </script>
     </body>
 </html>
 
