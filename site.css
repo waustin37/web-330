@@ -8,6 +8,7 @@
     margin-top: 50px;
     margin-left: 100px;
     margin-right: 100px;
+    padding: 10px;
 }
 #icon-mode:hover{
     cursor: pointer;
@@ -33,8 +34,6 @@
 }
 .app-header{
     text-align: center;
-    color: black;
-    background-color: white;
     border: none;
     font-weight: normal;
 }
