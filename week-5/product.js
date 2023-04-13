@@ -1,0 +1,15 @@
+/*
+    ==================
+    Title: product.js, 
+    Author: William Austin
+    Date: 4/06/2023
+    Description: Creating a Product Class Module for Repair Shop App
+*/
+
+export class Product{
+    constructor(name, price){
+        this.name = name;
+        this.price = price;
+        this.id = Math.random().toString(radix16).slice(2); //Creates a random ID Number
+    }
+}
