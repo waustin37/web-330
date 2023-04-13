@@ -11,6 +11,7 @@
     margin: 0, 0;
     padding-left: 290px;
     font-size: 28px;
+    color: var(--card-title-color);
 }
 cart-component:hover{
     cursor: pointer;
@@ -29,4 +30,7 @@ cart-component:hover{
 }
 .expert{
     padding-bottom: 20px;
+}
+i:hover{
+    cursor: pointer;
 }
