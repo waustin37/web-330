@@ -1,4 +1,4 @@
-class CartComponent extends HTMLElement {
+export class CartComponent extends HTMLElement {
     constructor(){
         super(); 
     }
