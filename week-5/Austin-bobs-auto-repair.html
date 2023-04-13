@@ -27,6 +27,8 @@
         <div id="container">
             <h1 class="app-header">Welcome to Bob's Automotive Repair Shop!</h1>
                 <div id="card" class="assign-container, assign-content">
+
+        <!--Product List Card-->
                     <p id="card-title">Product Listing</p>
                     <cart-component></cart-component> <br> <br>
                     <div id="form">
@@ -62,6 +64,8 @@
     <!--JavaScript-->
 
     <script type="module">
+
+        //Imports from other JS Files
         import {CartComponent} from "./cart-component.js";
         import {Product} from "./product.js";
         import {ShoppingCart} from "./shopping-cart.js";
@@ -71,6 +75,8 @@
 
         setCartCount();
 
+
+        //What Happens when you click Add to Cart, should display an Alert Message saying what you've added
         document.getElementById("btnAddProduct").onclick = function(){
 
             let productList = document.getElementById("productList");
@@ -84,6 +90,9 @@
                 productList.value = "select";
             }
         }
+
+        //What happens when you click the cart icon (should generate the cart)
+
         document.getElementById("cartIcon").onclick = function(){
             let cartDisplayTable = `<table class="table">
                                     <tr>
@@ -106,6 +115,7 @@
              document.getElementById('shoppingCart').innerHTML = cartDisplayTable; 
         }
 
+        //Shows you how many items you have in the Cart
         function setCartCount() 
             {
                 document.getElementById('cart-count').innerHTML = shoppingCart.count();

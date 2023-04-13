@@ -2,7 +2,7 @@
     ==================
     Title: product.js, 
     Author: William Austin
-    Date: 4/06/2023
+    Date: 4/12/2023
     Description: Creating a Product Class Module for Repair Shop App
 */
 
