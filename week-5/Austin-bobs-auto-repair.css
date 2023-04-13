@@ -7,10 +7,14 @@
     padding-left: 20px;
 }
 
+#cartIcon{
+    margin: 0, 0;
+    padding-left: 290px;
+    font-size: 28px;
+}
 cart-component:hover{
     cursor: pointer;
-    align-items: center ;
-    background-color:darkgoldenrod;
+    background-color: #D6A800;
 }
 #btnAddProduct{
     border: none;
