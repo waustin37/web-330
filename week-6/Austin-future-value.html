@@ -96,10 +96,13 @@
         import {FinanceCalculator} from "./finance-calculator.js";
 
 
+        //Adding today's date
         document.getElementById("today").innerHTML = new Date().toLocaleDateString("en-US");
 
+        //What happens when you click the button
         document.getElementById("btnCalculate").onclick = function(){
 
+            //HTML elements assigned to JS Variables 
             let monthlyPayment = document.getElementById("txtMonthlyPayment").value;
             let rate = document.getElementById("txtYearlyRate").value;
             let years = document.getElementById("listNumOfYears").value;
@@ -107,6 +110,7 @@
 
             let monthlyPaymentValidator = new Validator("Monthly Payment", monthlyPayment);
             
+            //Passing Validation Modules Through 
             monthlyPaymentValidator.addRequiredField();
             monthlyPaymentValidator.addRequiredFloatField();
             monthlyPaymentValidator.addFloatMinField(100);
