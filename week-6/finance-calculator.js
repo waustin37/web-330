@@ -5,6 +5,10 @@
     Date: 4/22/2023
     Description: Creating a Finance Calculator Module for Future Value App
 */
+
+"use-strict";
+
+
 export class FinanceCalculator {
     static MONTHS_IN_YEAR = 12;
     static calculateFutureValue(monthlyPayment, rate, years){

@@ -5,6 +5,9 @@
     Date: 4/22/2023
     Description: Creating a Float Field Min Module for Future Value App
 */
+
+"use-strict";
+
 export class FloatMinField {
     constructor (name, field, min){
         this.name = name;

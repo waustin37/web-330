@@ -5,6 +5,9 @@
     Date: 4/22/2023
     Description: Creating a Float Field Max Module for Future Value App
 */
+
+"use-strict";
+
 export class FloatMaxField {
     constructor (name, field, max){
         this.name = name;

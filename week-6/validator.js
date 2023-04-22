@@ -1,3 +1,13 @@
+/*
+    ==================
+    Title: validator.js
+    Author: William Austin
+    Date: 4/22/2023
+    Description: Creating a Validator Module for Future Value App
+*/
+
+"use-strict";
+
 import {RequiredField} from "./required-field.js";
 import {FloatField} from "./float-field.js";
 import {FloatMaxField} from "./float-max-field.js";
@@ -17,10 +27,10 @@ addRequiredFloatField(){
     this.validators.push(new FloatField(this.name, this.field));
 }
 addFloatMinField(min){
-    this.validators.push(new FloatMinField(this.name, this.field, this.min));
+    this.validators.push(new FloatMinField(this.name, this.field, min));
 }
 addFloatMaxField(max){
-    this.validators.push(new FloatMaxField(this.name, this.field, this.max));
+    this.validators.push(new FloatMaxField(this.name, this.field, max));
 }
 validate(){
     for (let x of this.validators){
