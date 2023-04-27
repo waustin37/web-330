@@ -108,9 +108,9 @@
         console.log("this" + data);
 
         let bookData =
-            `<ul style="display:inline; list-style-type:none;">`;
+            `<ul style="list-style-type:none;">`;
                 for (let field of data){
-                    bookData += `<li><b>${field.dataset.value}:</b> ${field.innerHTML}</li>`;      
+                    bookData += `<li><b>${field.dataset.name}:</b> ${field.dataset.value}</li>`;      
                 }
             bookData += `</li></ul>`;
 
@@ -126,6 +126,7 @@
     </script>
     </body>
 </html>
+
 
 
 
