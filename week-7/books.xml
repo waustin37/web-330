@@ -1,58 +1,44 @@
-/// <summary>
-/// Title: books.xml
-/// Author - William John Austin
-/// Date: 04/27/2023
-/// Description: XML Book Data for WhatABook App Web 330
-/// </summary>
-
-<?xml version="1.0" encoding="UTF-8"?>
 <books>
-
-  <book category="fantasy">
-    <isbn>9780345339683</isbn>
-    <title lang="en">The Hobbit or There and Back Again</title>
-    <description>N/A</description>
-    <pages>287</pages>
-    <authors>J.R.R. Tolkien</authors>
-  </book>
-
-  <book category="fantasy">
-    <isbn>9780261103573</isbn>
-    <title lang="en">The Fellowship of the Ring</title>
-    <description>The first part of The Lord of the Rings</description>
-    <pages>416</pages>
-    <authors>J.R.R. Tolkien</authors>
-  </book>
-
-  <book category="fantasy">
-    <isbn>9780261102361</isbn>
-    <title lang="en">The Two Towers</title>
-    <description>The second part of The Lord of the Rings</description>
-    <pages>442</pages>
-    <authors>J.R.R. Tolkien</authors>
-  </book>
-
-  <book category="fantasy">
-    <isbn>9780261102378</isbn>
-    <title lang="en">The Return of the King</title>
-    <description>The third part of The Lord of the Rings</description>
-    <pages>556</pages>
-    <authors>J.R.R. Tolkien</authors>
-  </book>
-
-  <book category="sci-fi">
-    <isbn>9780593099322</isbn>
-    <title lang="en">Dune: Deluxe Edition</title>
-    <description>N/A</description>
-    <pages>688</pages>
-    <authors>Frank Herbert</authors>
-  </book>
-
-  <book category="fiction">
-    <isbn>9780316769532</isbn>
-    <title lang="en">The Catcher and the Rye</title>
-    <description>N/A</description>
-    <pages>277</pages>
-    <authors>J.D. Salinger</authors>
-  </book>
+    <book>
+        <isbn>9780345339683</isbn>
+        <title lang="en">The Hobbit or There and Back Again</title>
+        <description>N/A</description>
+        <pages>287</pages>
+        <authors>J.R.R. Tolkien</authors>
+    </book>
+    <book>
+        <isbn>9780261103573</isbn>
+        <title lang="en">The Fellowship of the Ring</title>
+        <description>The first part of The Lord of the Rings</description>
+        <pages>416</pages>
+        <authors>J.R.R. Tolkien</authors>
+    </book>
+    <book>
+        <isbn>9780261102361</isbn>
+        <title lang="en">The Two Towers</title>
+        <description>The second part of The Lord of the Rings</description>
+        <pages>442</pages>
+        <authors>J.R.R. Tolkien</authors>
+    </book>
+    <book>
+        <isbn>9780261102378</isbn>
+        <title lang="en">The Return of the King</title>
+        <description>The third part of The Lord of the Rings</description>
+        <pages>556</pages>
+        <authors>J.R.R. Tolkien</authors>
+    </book>
+    <book>
+        <isbn>9780593099322</isbn>
+        <title lang="en">Dune: Deluxe Edition</title>
+        <description>N/A</description>
+        <pages>688</pages>
+        <authors>Frank Herbert</authors>
+    </book>
+    <book>
+        <isbn>9780316769532</isbn>
+        <title lang="en">The Catcher and the Rye</title>
+        <description>N/A</description>
+        <pages>277</pages>
+        <authors>J.D. Salinger</authors>
+    </book>
 </books>
