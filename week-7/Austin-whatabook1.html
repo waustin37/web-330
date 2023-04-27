@@ -1,55 +1,52 @@
-<!--
-    Title: Austin-whatabook1.html
-    Author: William John Austin
-    Date: 04/27/2023
-    Description: Book App for Web 330
--->
+
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>WEB 330 - Enterprise JavaScript II</title>
+<head>
+    <!-- Header with links to the course Google fonts and stylesheets. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--Style Sheets-->
-        <link rel="stylesheet" type="text/css" href="../site.css">
-        <link rel="stylesheet" type="text/css" href="../theme.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>WEB 330 - Enterprise Javascript II</title>
+    
+    <link rel="stylesheet" href="../theme.css">
+    <link rel="stylesheet" href="../site.css">
 
-<!--JavaScript for Theme Selection-->
-        <script src="../theme.js"></script>
-    </head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
 
     <body class="light-theme">
-
         <div id="container">
-            <h1 class="app-header">Welcome to the What-A-Book, Part 1 App!</h1>
-                
-    <!--Book List-->
-                <div id="card" style="padding-bottom: 20px;" class="assign-container, assign-content">
-                    <p id="card-title">Book Listing</p>
-                    <div class="card-content" id="bookList"></div>
+
+            <!-- App title. -->
+            <div class="app-header">Welcome to the WhatABook, Part 1 App!</div>
+            <div class="assign-content">
+
+                <!-- Book Listing card. -->
+                <div class="card">
+                    <div class="card-title">Book Listing</div>
+                    <div class="card-content" id="bookList"></div>  
                 </div>
 
-    <!--Back to Landing-->
+                <!-- Link to homepage. -->
+                <a class="return-home" href="../index.html">Return</a>
 
-            <a href="../index.html" class="return-home">Return</a>
-
-    <!--Total after Interest Card-->
-                <div class = "assign-container">
-                    <div class = "assign-content">
-                        <div id="card" style="padding-bottom: 20px;" class="expert">
-                            <p id="card-title">Selected Book</p>
-                            <div class="card-content" id="selectedBook"></div>
-                        </div>
-                    </div>
+                <!-- Selected Book card. -->
+                <div class="card">
+                    <div class="card-title">Selected Book</div>
+                    <div class="card-content" id="selectedBook"></div>
                 </div>
+            </div>
         </div>
 
-    <!--JavaScript-->
+        <!-- Theme and webpage scripts. -->
+        <script type="application/javascript" src="../theme.js"></script> 
+        <script>
 
-    <script type="module">
-        window.addEventListener('DOMContentLoaded', function(event) {
+            // XML data populates table on HTML document load.
+            window.addEventListener('DOMContentLoaded', function(event) {
                 console.log('DOM fully loaded and parsed');
 
                 // Declare that the filename is books.xml.
@@ -165,8 +162,8 @@
                 console.log("View buttons added from NodeList.");
             }
 
-    </script>
+
+        </script>
+
     </body>
 </html>
-
-
