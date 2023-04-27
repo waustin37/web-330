@@ -9,21 +9,21 @@
     <book>
         <isbn>9780261103573</isbn>
         <title lang="en">The Fellowship of the Ring</title>
-        <description>The first part of The Lord of the Rings</description>
+        <description>The First Part of The Lord of the Rings</description>
         <pages>416</pages>
         <authors>J.R.R. Tolkien</authors>
     </book>
     <book>
         <isbn>9780261102361</isbn>
         <title lang="en">The Two Towers</title>
-        <description>The second part of The Lord of the Rings</description>
+        <description>The Second Part of The Lord of the Rings</description>
         <pages>442</pages>
         <authors>J.R.R. Tolkien</authors>
     </book>
     <book>
         <isbn>9780261102378</isbn>
         <title lang="en">The Return of the King</title>
-        <description>The third part of The Lord of the Rings</description>
+        <description>The Third Part of The Lord of the Rings</description>
         <pages>556</pages>
         <authors>J.R.R. Tolkien</authors>
     </book>
