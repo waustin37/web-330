@@ -49,9 +49,9 @@
     <!--JavaScript-->
 
     <script type="module">
-    "use-strict"
+    'use-strict';
 
-    window.addEventListener("DOMContentLoaded", function(event){
+    document.addEventListener("DOMContentLoaded", function (event) {
         console.log('DOM fully loaded and parsed');
 
         let fileName = 'books.xml';
@@ -69,7 +69,7 @@
     });
 
     function loadBooks(xml){
-        let books = xml.getElementsByTagName('book')
+        let books = xml.getElementsByTagName('book');
         let tableData = `<table id="bookTable" class="table">
                                 <thead>
                                     <th>ISBN</th>
@@ -86,14 +86,14 @@
                     let pages = book.getElementsByTagName("pages") [0].childNodes[0].nodeValue;
                     let authors = book.getElementsByTagName("authors") [0].childNodes[0].nodeValue;
                     tableData +=  `<tr>
-                                    <td data-value="isbn"><a href="#" class="isbn-link">${isbn}</a></td>
-                                    <td data-value="Title">${title}</td>
-                                    <td data-value="Description">${description}</td>
-                                    <td data-value="Pages">${pages}</td>
-                                    <td data-value="Authors">${author}</td>
-                                    </tr>`;
+                                     <td data-value="isbn"><a href="#" class="isbn-link">${isbn}</a></td>
+                                     <td data-value="Title">${title}</td>
+                                     <td data-value="Description">${description}</td>
+                                     <td data-value="Pages">${pages}</td>
+                                     <td data-value="Authors">${authors}</td>
+                                   </tr>`;
                     }
-                    tableData += `</tbody></table>`
+                    tableData += `</tbody></table>`;
                     document.getElementById('bookList').innerHTML = tableData;
     }
 
@@ -118,7 +118,7 @@
     }
 
     function addIsbnClickEvents(){
-        let viewButtons = document.querySelectorAll("#bookTable tbody .isbn-link")
+        let viewButtons = document.querySelectorAll("#bookTable tbody .isbn-link");
         for (let i = 0; i <viewButtons.length; i++){
             viewButtons[i].addEventListener("click", anchorClicked);
         }
