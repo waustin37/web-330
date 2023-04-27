@@ -13,7 +13,7 @@
     <title lang="en">The Hobbit or There and Back Again</title>
     <description>N/A</description>
     <pages>287</pages>
-    <author>J.R.R. Tolkien</author>
+    <authors>J.R.R. Tolkien</authors>
   </book>
 
   <book category="fantasy">
@@ -21,7 +21,7 @@
     <title lang="en">The Fellowship of the Ring</title>
     <description>The first part of The Lord of the Rings</description>
     <pages>416</pages>
-    <author>J.R.R. Tolkien</author>
+    <authors>J.R.R. Tolkien</authors>
   </book>
 
   <book category="fantasy">
@@ -29,7 +29,7 @@
     <title lang="en">The Two Towers</title>
     <description>The second part of The Lord of the Rings</description>
     <pages>442</pages>
-    <author>J.R.R. Tolkien</author>
+    <authors>J.R.R. Tolkien</authors>
   </book>
 
   <book category="fantasy">
@@ -37,7 +37,7 @@
     <title lang="en">The Return of the King</title>
     <description>The third part of The Lord of the Rings</description>
     <pages>556</pages>
-    <author>J.R.R. Tolkien</author>
+    <authors>J.R.R. Tolkien</authors>
   </book>
 
   <book category="sci-fi">
@@ -45,7 +45,7 @@
     <title lang="en">Dune: Deluxe Edition</title>
     <description>N/A</description>
     <pages>688</pages>
-    <author>Frank Herbert</author>
+    <authors>Frank Herbert</authors>
   </book>
 
   <book category="fiction">
@@ -53,6 +53,6 @@
     <title lang="en">The Catcher in the Rye</title>
     <description>N/A</description>
     <pages>277</pages>
-    <author>J.D. Salinger</author>
+    <authors>J.D. Salinger</authors>
   </book>
 </books>

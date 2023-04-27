@@ -28,9 +28,7 @@
     <!--Book List-->
                 <div id="card" class="assign-container, assign-content">
                     <p id="card-title">Book Listing</p>
-                    <div class="card-content" id="bookList">
-
-                    </div>
+                    <div class="card-content" id="bookList"></div>
                 </div>
 
     <!--Back to Landing-->
@@ -53,8 +51,10 @@
     <script type="module">
         "use-strict"
 
-        document.addEventListener("DOMContentLoaded", function(){
-            let fileName = "books.xml";
+        window.addEventListener("DOMContentLoaded", function(event){
+            console.log('DOM fully loaded and parsed');
+
+            let fileName = 'books.xml';
 
             fetch(fileName)
             .then(res => res.text())
@@ -69,31 +69,32 @@
 
         function loadBooks(xml){
             let books = xml.getElementsByTagName('book')
-            let tableData = `<table id ="bookTable" class="table">
-                                    <tr>
+            let tableData = `<table id="bookTable" class="table">
+                                    <thead>
                                         <th>ISBN</th>
                                         <th>Title</th>
                                         <th>Description</th>
                                         <th>Pages</th>
                                         <th>Authors</th>
-                                    </tr>`
+                                    </thead>
+                                    <tbody>`
                                     ;
                     for(let book of books){
                         let isbn = book.getElementsByTagName("isbn") [0].childNodes[0].nodeValue;
                         let title = book.getElementsByTagName("title") [0].childNodes[0].nodeValue;
                         let description = book.getElementsByTagName("description") [0].childNodes[0].nodeValue;
                         let pages = book.getElementsByTagName("pages") [0].childNodes[0].nodeValue;
-                        let author = book.getElementsByTagName("author") [0].childNodes[0].nodeValue;
+                        let authors = book.getElementsByTagName("authors") [0].childNodes[0].nodeValue;
                         tableData +=  `<tr>
-                                         <td data-value="isbn" data-id="${isbn}"><a href="#" class="isbn-link">${isbn}</a></td>
-                                         <td data-value="title" data-id="${title}">${title}</td>
-                                         <td data-value="description" data-id="${description}">${description}</td>
-                                         <td data-value="pages" data-id="${pages}">${pages}</td>
-                                         <td data-value="author" data-id="${author}">${author}</td>
+                                         <td data-value="ISBN" data-id="${isbn}"><a href="#" class="isbn-link">${isbn}</a></td>
+                                         <td data-value="Title" data-id="${title}">${title}</td>
+                                         <td data-value="Description" data-id="${description}">${description}</td>
+                                         <td data-value="Pages" data-id="${pages}">${pages}</td>
+                                         <td data-value="Authors" data-id="${author}">${author}</td>
                                         </tr>`;
                         }
-                        tableData += `</table>`
-                        document.getElementById("bookList").innerHTML = tableData;
+                        tableData += `</tbody></table>`
+                        document.getElementById('bookList').innerHTML = tableData;
         }
 
         function anchorClicked(e){
@@ -104,11 +105,12 @@
             let row = cell.parentElement;
 
             let data = row.querySelectorAll("td");
+            console.log("this" + data);
 
             let bookData =
-                `<ul style="display:inline; list-style-type:none;">`
+                `<ul style="display:inline; list-style-type:none;">`;
                     for (let field of data){
-                        bookData += `<li><b>${field.dataset.value}:</b> ${field.dataset.id}`;      
+                        bookData += `<li><b>${field.dataset.value}:</b> ${field.innerHTML}</li>`;      
                     }
                 bookData += `</li></ul>`;
 
