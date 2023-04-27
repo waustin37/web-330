@@ -26,7 +26,7 @@
             <h1 class="app-header">Welcome to the What-A-Book, Part 1 App!</h1>
                 
     <!--Book List-->
-                <div id="card" style="padding-bottom: 20px;" class="assign-container, assign-content">
+                <div id="card" style="padding-bottom: 20px; padding-right: 20px" class="assign-container, assign-content">
                     <p id="card-title">Book Listing</p>
                     <div class="card-content" id="bookList"></div>
                 </div>
@@ -85,11 +85,11 @@
                     let pages = book.getElementsByTagName("pages") [0].childNodes[0].nodeValue;
                     let authors = book.getElementsByTagName("authors") [0].childNodes[0].nodeValue;
                     tableData +=  `<tr>
-                                     <td data-value="isbn"><a href="#" class="isbn-link">${isbn}</a></td>
-                                     <td data-value="Title">${title}</td>
-                                     <td data-value="Description">${description}</td>
-                                     <td data-value="Pages">${pages}</td>
-                                     <td data-value="Authors">${authors}</td>
+                                     <td data-value="ISBN" data-id="${isbn}"><a href="#" class="isbn-link">${isbn}</a></td>
+                                     <td data-value="Title" data-id="${title}">${title}</td>
+                                     <td data-value="Description" data-id="${description}">${description}</td>
+                                     <td data-value="Pages" data-id="${pages}">${pages}</td>
+                                     <td data-value="Authors" data-id="${authors}">${authors}</td>
                                    </tr>`;
                     }
                     tableData += `</tbody></table>`;
@@ -104,12 +104,11 @@
         let row = cell.parentElement;
 
         let data = row.querySelectorAll("td");
-        console.log("this" + data);
 
         let bookData =
             `<ul style="list-style-type:none;">`;
                 for (let field of data){
-                    bookData += `<li><b>${field.dataset.name}:</b> ${field.dataset.value}</li>`;      
+                    bookData += `<li><b> ${field.dataset.value}:</b>${field.dataset.id}</li>`;      
                 }
             bookData += `</li></ul>`;
 
