@@ -37,6 +37,16 @@ a:hover{
     background-color: #5B7D6C;
     color: #6DFFB4;
 }
+
+.download:hover {
+    text-decoration: none;
+    color: black;
+    background-color: #6DFFB4;
+}
+button:hover{
+    background-color: rgb(25, 27, 25);
+}
+
 #footer{
     text-align: center;
     background-color: #6DFFB4;
