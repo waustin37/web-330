@@ -43,9 +43,6 @@ a:hover{
     color: black;
     background-color: #6DFFB4;
 }
-button:hover{
-    background-color: rgb(25, 27, 25);
-}
 
 #footer{
     text-align: center;
