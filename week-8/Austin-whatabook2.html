@@ -56,7 +56,7 @@
         import {HttpClient} from "./http-client.js";
 
         let http = new HttpClient();
-        const isbns = [
+        const isbn = [
             '0345339681',
             '0261103571',
             '9780593099322',
@@ -68,7 +68,7 @@
             '9780590405959'
         ];
         let params = {
-            "bibkeys": `ISBN:${isbns.join(",")}`,
+            "bibkeys": `ISBN:${isbn.join(",")}`,
             "format": "json",
             "jscmd": "details"
         }
@@ -96,7 +96,7 @@
             let self = this;
             let isbn = self.innerText;
             let params = {
-                "bibkeys": `ISBN:${isbns}`,
+                "bibkeys": `ISBN:${isbn}`,
                 "format": "json",
                 "jscmd": "details"
             }
