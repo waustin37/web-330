@@ -76,7 +76,7 @@
         http.get("https://openlibrary.org/api/books", params).then(res =>{
             console.log(res);
 
-            document.getElementById("bookList").innerHTML = buildHtmlString(res, "bookTable");
+            document.getElementById("bookList").innerHTML = buildHtmlString(res, "table");
 
             addIsbnClickEvents();
         })
@@ -96,7 +96,7 @@
             let self = this;
             let isbn = self.innerText;
             let params = {
-                "bibkeys": `ISBN:${isbns.join(",")}`,
+                "bibkeys": `ISBN:${isbns}`,
                 "format": "json",
                 "jscmd": "details"
             }
