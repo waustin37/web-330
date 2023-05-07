@@ -137,11 +137,11 @@
                     pages: res[key].details.number_of_pages ? res[key].details.number_of_pages : "N/A",
                     authors: authors.join(',')
                 }
-                ulString += `<li><b>ISBN:</b>${book.isbn}</li>
-                            <li><b>Title:</b>${book.title}</li>
-                            <li><b>Description:</b>${book.description}</li>
-                            <li><b>Pages:</b>${book.pages}</li>
-                            <li><b>Authors:</b>${book.authors}`;
+                ulString += `<li><b>ISBN: </b>${book.isbn}</li>
+                            <li><b>Title: </b>${book.title}</li>
+                            <li><b>Description: </b>${book.description}</li>
+                            <li><b>Pages: </b>${book.pages}</li>
+                            <li><b>Authors: </b>${book.authors}`;
 
                 tableString += `<tr><td><a href="#" class="isbn-link">${book.isbn}</a></td>
                             <td>${book.title}</td>
