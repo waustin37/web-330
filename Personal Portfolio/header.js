@@ -15,10 +15,10 @@ class Header extends HTMLElement
                         <a href="index.html">Home</a>
                     </li>
                     <li class="nav">
-                    <a href="about.html">About</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li class="nav">
-                    <a href="resume.html">Resume</a>
+                        <a href="resume.html">Resume</a>
                     </li>
                     <li class="nav">
                         <a href="projects.html">Projects</a>
@@ -30,7 +30,7 @@ class Header extends HTMLElement
                         <a href="unit-tests.html">API Unit Tests</a>
                     </li>
                     <li class="nav">
-                        <a href="austin-tech-value-stream.html">Presentations</a>
+                        <a href="presentations.html">Presentations</a>
                     </li>
                     <li class="nav">
                         <a href="bucket-list.html">Bucket List</a>

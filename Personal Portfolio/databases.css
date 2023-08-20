@@ -11,6 +11,8 @@
 }
 .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: 100pt;
+    width: 340pt;
     transition: 0.3s;
     margin: 3% auto 0;
     background-color: #a8dcc2;
