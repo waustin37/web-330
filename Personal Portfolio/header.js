@@ -23,18 +23,6 @@ class Header extends HTMLElement
                     <li class="nav">
                         <a href="projects.html">Projects</a>
                     </li>
-                    <li class="nav">
-                        <a href="databases.html">Database Diagrams</a>
-                    </li>
-                    <li class="nav">
-                        <a href="unit-tests.html">API Unit Tests</a>
-                    </li>
-                    <li class="nav">
-                        <a href="presentations.html">Presentations</a>
-                    </li>
-                    <li class="nav">
-                        <a href="bucket-list.html">Bucket List</a>
-                    </li>
                 </ul>
             </div>
         `;
